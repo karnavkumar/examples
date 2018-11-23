@@ -1,0 +1,19 @@
+First Login with below command.
+
+ssh -L 27017:127.0.0.1:27017 -i mytrax-aws.pem ubuntu@ec2-13-210-137-74.ap-southeast-2.compute.amazonaws.com -v
+
+Where : 
+
+-L = Listen on local
+27017:127.0.0.1 = On Which Port on Local
+:27017 = Map the Port on the Server
+mytrax-aws.pem (( PEM file that you use to connect to the server ))
+ubuntu@ec2-13-210-137-74.ap-southeast-2.compute.amazonaws.com = User Name @ Server IP / Domain Name
+-v = Verbose output.
+
+Once done, You can connect to your favorite desktop client to connect.
+
+Use Connection String as :
+
+1) Server = 127.0.0.1
+2) Port = 27017
